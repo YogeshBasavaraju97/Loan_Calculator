@@ -1,7 +1,10 @@
 
 
+
+
 export async function fetchExchangeRates(base = "USD") {
-  const response = await fetch(process.env.ExchangeURL + `${base}`);
+  const url = process.env.ExchangeURL + base;
+  const response = await fetch(url);
   const data = await response.json();
   return data.rates;
 }

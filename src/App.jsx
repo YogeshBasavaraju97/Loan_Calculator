@@ -1,14 +1,18 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import LoanForm from './components/LoadForm';
 import './App.css';
+import Navbar from './components/Navbar';
+import React from "react";
+import ExchangeRates from './components/ExchangeRates';
+
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-
+      <Navbar />
+      {/* <LoanForm /> */}
+      <ExchangeRates />
     </>
   );
 }
