@@ -1,10 +1,9 @@
 
 
 
-
 export async function fetchExchangeRates(base = "USD") {
-  const url = process.env.ExchangeURL + base;
+  const url = import.meta.env.VITE_EXCHANGE_URL + base;
   const response = await fetch(url);
   const data = await response.json();
-  return data.rates;
+  return data?.conversion_rates;
 }
