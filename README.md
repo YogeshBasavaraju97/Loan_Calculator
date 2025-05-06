@@ -1,12 +1,66 @@
-# React + Vite
+# 📘 Loan Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, single-page React application that calculates loan EMIs (Equated Monthly Installments), displays an amortization schedule, and converts EMI values in real time using live exchange rates.
 
-Currently, two official plugins are available:
+> 🚀 **Live Demo:** [View on Vercel](https://loan-calculator-yogeshs-projects-1f0629e0.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔍 About This App
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Built using **React** and **Material UI**, this app allows users to:
+
+- Calculate loan EMIs
+- View a monthly amortization schedule
+- Convert EMI to other currencies using live exchange rates
+
+---
+
+## 🎯 Project Objectives
+
+This project demonstrates:
+
+- ✅ React fundamentals: state, props, hooks, and routing
+- ✅ Custom reusable hooks
+- ✅ Integration with third-party APIs
+- ✅ Responsive design with Material UI
+- ✅ Global state using Context API
+- ✅ Theme toggling (light/dark)
+- ✅ Graceful error handling
+
+---
+
+## 🧠 Features
+
+- 💰 **Loan EMI Calculation** using standard financial formulas
+- 📊 **Amortization Schedule** with detailed breakdown
+- 🌍 **Real-time Currency Conversion** with ExchangeRate API
+- 📈 **Paginated Exchange Rate Table** (160+ currencies)
+- 🌗 **Light/Dark Theme Toggle**
+- 📱 **Responsive Design** with collapsible mobile navigation
+- ⚠️ **404 Not Found Page**
+- ❗ **Global Error Page Handling**
+- 🧩 **Custom Hooks**
+- 🧠 **Global State via Context API**
+
+---
+
+## ⚙️ Technologies Used
+
+| Tech             | Purpose                              |
+| ---------------- | ------------------------------------ |
+| React.js         | Frontend framework                   |
+| React Router     | Client-side routing                  |
+| Context API      | Global state management              |
+| Axios            | API calls                            |
+| Material UI      | Component styling and responsiveness |
+| ExchangeRate API | Live currency conversion             |
+| Vercel           | Deployment platform                  |
+
+---
+
+## 🧮 EMI Formula
+
+```text
+EMI = [P × R × (1 + R)^N] / [(1 + R)^N – 1]
+```
