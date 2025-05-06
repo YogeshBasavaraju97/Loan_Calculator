@@ -49,10 +49,10 @@ const AmortizationTable = ({ schedule, currency = "USD" }) => {
           {schedule.map((row, idx) => (
             <TableRow key={idx}>
               <TableCell>{row.month}</TableCell>
-              <TableCell align="center">{row.principalPaid.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {currency}</TableCell>
-              <TableCell align="center" >{row.interest.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {currency}</TableCell>
+              <TableCell align="center"> {parseFloat(row.principalPaid).toFixed(2)}{" "}{currency}</TableCell>
+              <TableCell align="center">{parseFloat(row.interest).toFixed(2)}{" "}{currency}</TableCell>
               <TableCell align="right">
-                {row.balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })} {currency}
+                {parseFloat(row.balance).toFixed(2)}{" "}{currency}
               </TableCell>
             </TableRow>
           ))}
