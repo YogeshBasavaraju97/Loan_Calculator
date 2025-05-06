@@ -36,9 +36,12 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <Button key={link.text} sx={{
                   px: 2.5, py: .5,
-                  backgroundColor: location.pathname === link.path ? '#3598f0' : 'transparent', // light blue background
-
+                  backgroundColor: location.pathname === link.path ? '#3898ef' : 'transparent',
                   borderRadius: 1,
+                  '&:hover': {
+                    opacity: .6
+                  }
+
                 }} color="inherit" component={Link} to={link.path}>
                   {link.text}
                 </Button>
